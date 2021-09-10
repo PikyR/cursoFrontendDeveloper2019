@@ -1,0 +1,17 @@
+.main-header{
+  width: 100vw;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  background-color: $color-verde;
+
+  &__logo{
+    width: 200px;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
