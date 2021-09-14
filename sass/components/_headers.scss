@@ -1,17 +1,39 @@
-.main-header{
+.main-header {
   width: 100vw;
   height: 80px;
   padding: 0 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: $color-verde;
+  background-color: $color-principal;
 
-  &__logo{
+  &__logo {
     width: 200px;
 
-    img{
+    img {
       width: 100%;
     }
   }
-}
 
+  &__menu {
+    position: relative;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    
+    // img {}
+    // p {}
+  }
+
+  &__links {
+    // display: none;
+    width: 100px;
+    list-style: none;
+    position: absolute;
+    text-align: right;
+  }
+}

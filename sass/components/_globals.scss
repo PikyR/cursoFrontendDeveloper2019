@@ -1,8 +1,13 @@
 // Variables
 $color-verde: #21C08B;
+$color-principal: #8F57FD;
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-color: $color-principal;
 }
