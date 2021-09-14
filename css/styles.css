@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.8rem;
+  font-family: "Mulish", sans-serif;
   background-color: #8F57FD;
 }
 
@@ -31,12 +37,30 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100px;
+  color: #FFFFFF;
+}
+.main-header__profile img {
+  width: 40px;
 }
 .main-header__links {
-  width: 100px;
+  width: 120px;
+  padding-top: 10px;
   list-style: none;
   position: absolute;
+  right: 0;
   text-align: right;
+}
+.main-header__link {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.main-header__link:hover {
+  text-decoration: underline;
+}
+.main-header .main-header__menu:hover, .main-header ul:hover {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
