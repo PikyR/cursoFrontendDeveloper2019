@@ -89,4 +89,41 @@ body {
   color: #FFFFFF;
 }
 
+.carousel__container {
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  overflow: scroll;
+}
+
+.carousel {
+  margin: 70px 0;
+  padding: 10px;
+  white-space: nowrap;
+}
+.carousel__item {
+  display: inline-block;
+  width: 180px;
+  height: 250px;
+  margin-right: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  background-color: #21C08B;
+}
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
 /*# sourceMappingURL=styles.css.map */
