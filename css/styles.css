@@ -60,7 +60,11 @@ body {
 .main-header__link:hover {
   text-decoration: underline;
 }
-.main-header .main-header__menu:hover, .main-header ul:hover {
+
+.main-header__menu:hover {
+  display: block;
+}
+.main-header__menu:hover .main-header__links {
   display: block;
 }
 

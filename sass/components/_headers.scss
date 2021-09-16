@@ -53,9 +53,12 @@
       text-decoration: underline;
     }
   }
+}
 
-  .main-header__menu:hover, ul:hover {
-    // background-color: $color-verde;
+.main-header__menu:hover {  
+  display: block;
+
+  .main-header__links {
     display: block;
   }
 }
