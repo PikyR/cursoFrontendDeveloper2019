@@ -1,5 +1,22 @@
-section.carousel__container
+section.carousel-container
   section.carousel 
+    //- +carousel-item(
+    //-   'URL de la imagen de fondo', 
+    //-   'Titulo del item',
+    //-   'Subtitulo del item'
+    //- )
+
+    +carousel-item(
+      'https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293_960_720.jpg', 
+      'Título', 
+      '2019 16+ 144 minutos'
+    )
+
     .carousel__item
-    .carousel__item
-    .carousel__item
+      img.carousel__image(src="https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293_960_720.jpg" alt="Stock image")
+      .carousel__details
+        .carousel__icons-container
+        img.carousel__icon(src="images/icons/play-icon.png" alt="Play")
+        img.carousel__icon(src="images/icons/plus-icon.png" alt="Plus")
+      p.carousel__title Título item carrousel
+      p.carousel__subtitle Subtítulo
