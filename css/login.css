@@ -68,4 +68,65 @@ body {
   display: block;
 }
 
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 0 30px;
+  background: linear-gradient(#21C08B, #AB88FF);
+}
+
+.login {
+  min-height: 600px;
+  min-width: 300px;
+  width: 500px;
+  padding: 60px 68px 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+.login__remember-me {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.login__remember-me label {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.login__remember-me a {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.login__remember-me a:hover {
+  text-decoration: underline;
+}
+.login__socials {
+  margin: 30px 0;
+}
+.login__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+.login__social-item:hover {
+  border-right-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
 /*# sourceMappingURL=login.css.map */

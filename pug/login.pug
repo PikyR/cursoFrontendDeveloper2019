@@ -3,7 +3,7 @@ extends components/template.pug
 block content
   section.login-container
     section.login 
-      h2 Inicia sesíon 
+      h2.login__title Inicia sesíon 
       //- 
       form.login__form
         input.input.input--email(type="email", placeholder="Correo")
@@ -11,15 +11,16 @@ block content
         button.button Iniciar sesión
         
         .login__remember-me
-          input(type="checkbox", id="check-remember-me", value="checkbox")
-          label(for="check-remember-me") Recuerdame
+          label(for="check-remember-me")
+            input(type="checkbox", id="check-remember-me", value="checkbox")
+            span Recuerdame
           a.login__link(href="/") Olvidé mi contraseña
       //- 
       section.login__socials 
-        .login__google
+        .login__social-item
           img(src="images/icons/google-icon.webp", alt="Google")
           span Inicia sesión con Google
-        .login__twitter
+        .login__social-item 
           img(src="images/icons/twitter-icon.webp", alt="Twitter")
           span Inicia sesión con Twitter
       //- 

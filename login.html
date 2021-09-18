@@ -26,19 +26,20 @@
     </header>
     <section class="login-container">
       <section class="login"> 
-        <h2>Inicia sesíon </h2>
+        <h2 class="login__title">Inicia sesíon </h2>
         <form class="login__form">
           <input class="input input--email" type="email" placeholder="Correo">
           <input class="input input--password" type="password" placeholder="Contraseña">
           <button class="button">Iniciar sesión</button>
           <div class="login__remember-me">
-            <input type="checkbox" id="check-remember-me" value="checkbox">
-            <label for="check-remember-me">Recuerdame</label><a class="login__link" href="/">Olvidé mi contraseña</a>
+            <label for="check-remember-me">
+              <input type="checkbox" id="check-remember-me" value="checkbox"><span>Recuerdame</span>
+            </label><a class="login__link" href="/">Olvidé mi contraseña</a>
           </div>
         </form>
         <section class="login__socials"> 
-          <div class="login__google"><img src="images/icons/google-icon.webp" alt="Google"><span>Inicia sesión con Google</span></div>
-          <div class="login__twitter"><img src="images/icons/twitter-icon.webp" alt="Twitter"><span>Inicia sesión con Twitter</span></div>
+          <div class="login__social-item"><img src="images/icons/google-icon.webp" alt="Google"><span>Inicia sesión con Google</span></div>
+          <div class="login__social-item"> <img src="images/icons/twitter-icon.webp" alt="Twitter"><span>Inicia sesión con Twitter</span></div>
         </section>
         <p class="login__register">No tienes ninguna cuenta <a href="/">registrate</a></p>
       </section>
