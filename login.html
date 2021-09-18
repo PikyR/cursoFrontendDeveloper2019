@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platzi Videos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&amp;display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/login.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <figure class="main-header__logo"><img src="images/logo-platzi-video.png" alt="Logo de Platzi Video"></figure>
+      <menu class="main-header__menu">
+        <div class="main-header__profile"><img src="images/icons/user-icon.png" alt="icono usuario">
+          <p>Perfil</p>
+        </div>
+        <ul class="main-header__links">
+          <li><a class="main-header__link" href="./">Cuenta</a></li>
+          <li><a class="main-header__link" href="./">Cerrar Sesión</a></li>
+        </ul>
+      </menu>
+    </header>
+    <section class="login-container">
+      <section class="login"> 
+        <h2>Inicia sesíon </h2>
+        <form class="login__form">
+          <input class="input input--email" type="email" placeholder="Correo">
+          <input class="input input--password" type="password" placeholder="Contraseña">
+          <button class="button">Iniciar sesión</button>
+          <div class="login__remember-me">
+            <input type="checkbox" id="check-remember-me" value="checkbox">
+            <label for="check-remember-me">Recuerdame</label><a class="login__link" href="/">Olvidé mi contraseña</a>
+          </div>
+        </form>
+        <section class="login__socials"> 
+          <div class="login__google"><img src="images/icons/google-icon.webp" alt="Google"><span>Inicia sesión con Google</span></div>
+          <div class="login__twitter"><img src="images/icons/twitter-icon.webp" alt="Twitter"><span>Inicia sesión con Twitter</span></div>
+        </section>
+        <p class="login__register">No tienes ninguna cuenta <a href="/">registrate</a></p>
+      </section>
+    </section>
+    <footer class="main-footer"> <a href="/">Términos de uso</a><a href="/">Declaración de privacidad</a><a href="/">Centro de ayuda</a></footer>
+  </body>
+</html>
