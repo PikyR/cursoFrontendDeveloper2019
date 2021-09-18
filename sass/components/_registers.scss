@@ -1,0 +1,16 @@
+.main-header {
+  background: $color-verde;
+}
+
+.register {
+  &__login {
+    font-weight: bold;
+    text-align: center;
+    color: $color-claro;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

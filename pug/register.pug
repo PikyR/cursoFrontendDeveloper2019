@@ -1,0 +1,14 @@
+extends components/template.pug
+
+block content
+  section.container
+    section.card.register
+      h2.card__title Regístrate 
+      //- 
+      form.card__form
+        input.input(type="text", placeholder="Nombre")
+        input.input(type="email", placeholder="Correo")
+        input.input(type="password", placeholder="Contraseña")
+        button.button Registrarme
+      //- 
+      a.register__login(href="/login.html") Iniciar sesión

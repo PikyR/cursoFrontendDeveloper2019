@@ -1,6 +1,8 @@
 // Variables
 $color-verde: #21C08B;
 $color-principal: #8F57FD;
+$color-secundario: #AB88FF;
+
 $color-claro: #FFFFFF;
 
 $fuente-principal: 'Mulish', sans-serif;
@@ -18,4 +20,84 @@ html {
 body{
   font-size: 1.8rem;
   font-family: $fuente-principal;  
+}
+
+.input {
+  margin: 20px 0;
+  padding: 15px 10px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid $color-claro;
+  border-left: 0;
+  font-family: $fuente-principal;
+  font-size: 1.8rem;
+  color: $color-claro;
+  background: transparent;
+  outline: none;
+  
+  &::placeholder {
+    color: $color-claro;
+  }
+
+  &:focus {
+    color: $color-claro;
+  }
+
+  &:hover {
+    &::placeholder {
+      color: rgba($color: $color-claro, $alpha: 0.5);
+    }
+  }
+  
+  // &--email {}
+  // &--password {}
+}
+
+.container {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 230px);
+  padding: 0 30px;
+  background: linear-gradient($color-verde, $color-secundario);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+  min-width: 300px;
+  width: 500px;
+  padding: 60px 68px 40px;
+  margin: 50px 0;
+  border: 2px solid $color-claro;
+  border-radius: 30px;
+  color: $color-claro;
+  background-color: rgba($color: $color-claro, $alpha: 0.1);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  // &__title {}
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.button {
+  margin: 15px 0;
+  padding: 15px;
+  font-family: $fuente-principal;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: $color-claro;
+  background: rgba($color: $color-claro, $alpha: 0.2);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba($color: $color-claro, $alpha: 0.3);
+  }
 }

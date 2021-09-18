@@ -135,54 +135,17 @@ body {
   display: block;
 }
 
-.login__socials {
-  margin: 30px 0;
-}
-.login__social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0;
-  padding: 10px;
-  border-right: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-}
-.login__social-item:hover {
-  border-right-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(255, 255, 255, 0.5);
-}
-.login__register {
-  text-align: center;
-}
-.login__register a {
-  color: #FFFFFF;
-  font-weight: bold;
-  text-decoration: none;
-}
-.login__register a:hover {
-  text-decoration: underline;
+.main-header {
+  background: #21C08B;
 }
 
-.remember-me {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-.remember-me label {
-  font-size: 1.6rem;
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  cursor: pointer;
-}
-.remember-me a {
-  font-size: 1.6rem;
+.register__login {
+  font-weight: bold;
+  text-align: center;
   color: #FFFFFF;
   text-decoration: none;
 }
-.remember-me a:hover {
+.register__login:hover {
   text-decoration: underline;
 }
 
@@ -204,4 +167,4 @@ body {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=register.css.map */
