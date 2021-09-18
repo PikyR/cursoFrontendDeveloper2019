@@ -69,6 +69,10 @@ body {
 }
 
 .search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 300px;
 }
 .search__title {
@@ -97,7 +101,15 @@ body {
   width: 100%;
   padding: 0 20px;
   position: relative;
-  overflow: scroll;
+  overflow-x: scroll;
+}
+.carousel-container::-webkit-scrollbar {
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.carousel-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
 .carousel {
@@ -126,22 +138,37 @@ body {
   object-fit: cover;
 }
 .carousel__details {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 1rem;
-  background-color: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 1.2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
   opacity: 0;
   transition: 450ms opacity;
 }
 .carousel__details:hover {
   opacity: 1;
 }
+.carousel__icon {
+  width: 25px;
+  margin-right: 5px;
+}
+.carousel__title {
+  margin-top: 3px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.carousel__subtitle {
+  color: #FFFFFF;
+}
 
-.carousel__container:hover, .carousel__item {
+.carousel:hover .carousel__item {
   opacity: 0.3;
 }
 
