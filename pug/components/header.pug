@@ -1,5 +1,5 @@
-header.main-header
-  figure.main-header__logo
+header.main-header 
+  a.main-header__logo(href="index.html")
     //- Logo principal
     img(src="images/logo-platzi-video.png", alt="Logo de Platzi Video")
 
@@ -11,5 +11,7 @@ header.main-header
     
     //- Navegación drop
     ul.main-header__links
+      li: a(href="login.html").main-header__link Login
+      li: a(href="register.html").main-header__link Registrarse
       li: a(href="./").main-header__link Cuenta
       li: a(href="./").main-header__link Cerrar Sesión

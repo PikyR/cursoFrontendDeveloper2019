@@ -36,6 +36,10 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.main-container {
+  background: linear-gradient(#21C08B, #AB88FF);
+}
+
 .container {
   display: flex;
   justify-content: center;

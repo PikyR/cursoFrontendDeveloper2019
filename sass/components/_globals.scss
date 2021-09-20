@@ -53,6 +53,10 @@ body{
   // &--password {}
 }
 
+.main-container{
+  background: linear-gradient($color-verde, $color-secundario);
+}
+
 .container {
   display: flex;  
   justify-content: center;
