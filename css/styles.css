@@ -11,17 +11,94 @@ html {
 body {
   font-size: 1.8rem;
   font-family: "Mulish", sans-serif;
-  background-color: #8F57FD;
+}
+
+.input {
+  margin: 20px 0;
+  padding: 15px 10px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 0;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  background: transparent;
+  outline: none;
+}
+.input::placeholder {
+  color: #FFFFFF;
+}
+.input:focus {
+  color: #FFFFFF;
+}
+.input:hover::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 230px);
+  padding: 0 30px;
+  background: linear-gradient(#21C08B, #AB88FF);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+  min-width: 300px;
+  width: 500px;
+  padding: 60px 68px 40px;
+  margin: 50px 0;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.card__form {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    min-width: 320px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.button {
+  margin: 15px 0;
+  padding: 15px;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .main-header {
-  width: 100vw;
+  width: 100%;
   height: 80px;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #8F57FD;
+  background-color: transparent;
 }
 .main-header__logo {
   width: 200px;
@@ -66,6 +143,30 @@ body {
 }
 .main-header__menu:hover .main-header__links {
   display: block;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 150px;
+  width: 100%;
+  background: #AB88FF;
+}
+.main-footer a {
+  padding-left: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main-footer a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+  .main-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .search {
